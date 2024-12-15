@@ -22,8 +22,14 @@ const changeSliderImage = () => {
           currentImage++;
         }
         sliderImage.src = `img/${sliderImgs[currentImage]}`;
-      })
-    }
+        sliderGrids.map((item, i) => {
+          setTimeout(() => {
+            item.classList.add('hide')
+          }, i * 100); 
+        })
+      }
+
+    }, 100);
   })
 }
 
