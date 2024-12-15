@@ -1,4 +1,4 @@
-//Making the slider working
+//Making the slider working for the first image
 
 const sliderImgs =["img1.png", "img2.png", "ing3.png", "img4.png", "img5.png", "img6.png"];
 let sliderImage = document.querySelector('.background-image');
@@ -9,3 +9,7 @@ setInterval(() => {
   changeSliderImage();
 }, 5000);
 
+//Changing the slider 
+const changeSliderImage = () => {
+  
+}
