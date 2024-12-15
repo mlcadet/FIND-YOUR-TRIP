@@ -1,7 +1,3 @@
-AOS.init({
-  duration: 1200,
-})
-
 //Making the slider working for the first image
 
 const sliderImgs =["img1.png", "img2.png", "ing3.png", "img4.png", "img5.png", "img6.png"];
@@ -15,6 +11,16 @@ setInterval(() => {
 
 //Changing the slider 
 const changeSliderImage = () => {
+  sliderGrids.map((gridItem, index) => {
+    setTimeout() => {
+      gridItem.classList.remote('hide');
 
+      setTimeout(() => {
+        if (index == sliderGrids.length - 1) 
+      })
+    }
+  })
 }
+
+// slider images array
 
