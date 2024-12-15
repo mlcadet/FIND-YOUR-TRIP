@@ -1,3 +1,6 @@
+
+const img = document.querySelectorAll("img");
+
 //Making the slider working for the first image
 
 const sliderImgs =["img1.png", "img2.png", "ing3.png", "img4.png", "img5.png", "img6.png"];
@@ -11,5 +14,5 @@ setInterval(() => {
 
 //Changing the slider 
 const changeSliderImage = () => {
-  
+
 }
