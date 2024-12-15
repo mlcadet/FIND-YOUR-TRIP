@@ -48,3 +48,74 @@ body{
 .link-item:hover{
   transform: scale(1.2);
 }
+
+/*-----------Styling the HERO section ---------   */
+
+
+.hero-section{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-section-title{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 80px;
+  text-align: center;
+  text-transform: capitalize; 
+}
+
+.hero-section-sub-heading{
+  text-align: center;
+  text-transform: capitalize;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.scroll-down-icon{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  animation: down ease 1s infinite;
+}
+
+@keyframes down{
+  from { bottom: 10% }
+  to { bottom: 8% }
+}
+
+/*--Styling the HERO section ---object fit resize images & video----z.index change the position of the stack------   */
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  odject-fit: cover;
+  z-index: -2;
+  
+}
+
+.background-image {
+  
+}
+
+
+
+
+
+/*-----------Styling the HERO section ---------   */
+
+
+
+
+/*-----------Styling the HERO section ---------   */
+
+
