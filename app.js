@@ -1,4 +1,4 @@
-Aos.init({
+AOS.init({
   duration: 1200,
 })
 
@@ -17,3 +17,4 @@ setInterval(() => {
 const changeSliderImage = () => {
 
 }
+
