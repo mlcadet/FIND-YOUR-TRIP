@@ -123,9 +123,39 @@ body{
 
 }
 
+.background::before {   
+  top: 0;
+  left: 0;
+  background:  var(gradient-top); /*starting from one color to another  */ 
 
+}
 
+.background::after {    /* ::before and ::after used to create some linear gradients   */
+  bottom: 0;
+  background: var(--gradient-bottom);
 
+}
+.grid-slider{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  backgound: #000;
+  opacity: 1;
+  trransition: .5s;
+
+}
+
+.grid-item.hide {
+  opacity: 0;
+}
 
 
 /*-----------Styling the HERO section ---------   */
