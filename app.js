@@ -1,7 +1,6 @@
-
-
-
-const img = document.querySelectorAll("img");
+Aos.init({
+  duration: 1200,
+})
 
 //Making the slider working for the first image
 
