@@ -1,4 +1,6 @@
 
+
+
 const img = document.querySelectorAll("img");
 
 //Making the slider working for the first image
