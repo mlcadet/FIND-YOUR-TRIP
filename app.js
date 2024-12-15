@@ -12,11 +12,16 @@ setInterval(() => {
 //Changing the slider 
 const changeSliderImage = () => {
   sliderGrids.map((gridItem, index) => {
-    setTimeout() => {
+    setTimeout(() => {
       gridItem.classList.remote('hide');
 
       setTimeout(() => {
-        if (index == sliderGrids.length - 1) 
+        if (index == sliderGrids.length - 1) {
+          currentImage = 0;
+        } else{
+          currentImage++;
+        }
+        sliderImage.src = `img/${sliderImgs[currentImage]}`;
       })
     }
   })
