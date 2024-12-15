@@ -1,5 +1,4 @@
 
-
 /*----------image gallery-----------*/
 /* Styles for smaller screens */
 @media (max-width: 768px) {
@@ -14,12 +13,6 @@
     width: 300px;
   }
 }
-
-
-
-
-
-
 
 /*--------create navbar-----*/
 html{
