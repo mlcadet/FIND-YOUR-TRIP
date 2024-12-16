@@ -1,6 +1,19 @@
 //Making the slider working for the first image
 
-const sliderImgs =["img1.png", "img2.png", "ing3.png", "img4.png", "img5.png", "img6.png"];
+const sliderImgs =[
+  "https://images.pexels.com/photos/592077/pexels-photo-592077.jpeg?auto=compress&cs=tinysrgb&w=400", 
+  
+  "https://images.pexels.com/photos/29719542/pexels-photo-29719542/free-photo-of-stunning-sunset-over-alpine-mountains-and-foliage.jpeg?auto=compress&cs=tinysrgb&w=400", 
+  
+  "https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg?auto=compress&cs=tinysrgb&w=400", 
+  
+  "https://images.pexels.com/photos/2674062/pexels-photo-2674062.jpeg?auto=compress&cs=tinysrgb&w=400", 
+  
+  "https://media.istockphoto.com/id/478656454/photo/maroon-bells-autumn-aspen-trees-lake-reflections-aspen-colorado.webp?b=1&s=612x612&w=0&k=20&c=-sZ8Kd1hV6DZMdh9WEOgyFUjkBnGrMiVOjLjlfHo0KE=", 
+
+  "https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367_640.jpg"
+
+];
 let sliderImage = document.querySelector('.background-image');
 let sliderGrids = [...document.querySelectorAll('.grid-item')];
 let currentImage = 0;
@@ -33,5 +46,22 @@ const changeSliderImage = () => {
   })
 }
 
+// adjusting the navbar
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  if(scrolly >= 200) {
+    navbar.classList.add('bg');
+  } else {
+    navbar.classList.remove('bg')
+  }
+})
+
+
 // slider images array
 
+
+
+
+
+// slider images array
