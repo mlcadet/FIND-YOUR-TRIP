@@ -23,34 +23,63 @@ setInterval(() => {
 }, 5000);
 
 //Changing the slider 
-const changeSliderImage = () => {
-  sliderGrids.map((gridItem, index) => {
-    setTimeout(() => {
-      gridItem.classList.remote('hide');
+// const changeSliderImage = () => {
+//   sliderGrids.map((gridItem, index) => {
+//     setTimeout(() => {
+//       gridItem.classList.remote('hide');
 
-      setTimeout(() => {
-        if (index == sliderGrids.length - 1) {
-          currentImage = 0;
-        } else{
-          currentImage++;
-        }
-        sliderImage.src = `img/${sliderImgs[currentImage]}`;
-        sliderGrids.map((item, i) => {
-          setTimeout(() => {
-            item.classList.add('hide')
-          }, i * 100); 
-        })
-      }
+//       setTimeout(() => {
+//         if (index == sliderGrids.length - 1) {
+//           currentImage = 0;
+//         } else{
+//           currentImage++;
+//         }
+//         sliderImage.src = `img/${sliderImgs[currentImage]}`;
+//         sliderGrids.map((item, i) => {
+//           setTimeout(() => {
+//             item.classList.add('hide')
+//           }, i * 100); 
+//         })
+//       }
 
-    }, 100);
-  })
-}
+//     }, 100);
+//   })
+// }
+
+
+
+/*--The above code not working try st else--*/
+const swiper = new Swiper(".swiper-container", {
+  slidesPerView: 4.5, // Number of slides visible
+  centeredSlides: true, // Center the active slide
+  spaceBetween: 30, // Space between slides
+  loop: true, // Enable looping
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
+
+  breakpoints: {
+    // Responsive design, changing slidesPerView based on screen width Code by Amit Niranjan
+    640: {
+      slidesPerView: 1.4
+    },
+    768: {
+      slidesPerView: 2.5
+    },
+    1024: {
+      slidesPerView: 4.2
+    }
+  }
+
+})
+
 
 // adjusting the navbar
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
-  if(scrolly >= 200) {
+  if(scroll >= 200) {
     navbar.classList.add('bg');
   } else {
     navbar.classList.remove('bg')

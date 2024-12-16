@@ -1,4 +1,9 @@
 
+
+
+
+
+
 /*----------image gallery-----------*/
 /* Styles for smaller screens */
 @media (max-width: 768px) {
@@ -152,6 +157,8 @@ body{
   background: var(--gradient-bottom);
 
 }
+
+/*  */
 .grid-slider{
   width: 100%;
   height: 100%;
@@ -271,6 +278,52 @@ body{
 
 
 
-/*-----------Styling the HERO section ---------   */
 
 
+.swiper-slide img {
+  width: 100%;
+  transition: transform 0.5s ease;
+  border-radius: 20px;
+  opacity: 0.4;
+  min-height: 350px;
+  obhect-fit: cover;
+}
+
+.swiper-slide-active img {
+  transform: scale(1); /* Zoom effect */
+  opacity: 1;
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+
+
+/*-----------grid---------   */
+/* .slider {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.grid-container {
+  padding-bottom: 20px;
+}
+
+.grid-scrollbar {
+  background: #d6d6d6;
+}
+
+.grid-container-horizontal > .grid-scrollbar {
+  border-radius: 2px;
+  height: 5px;
+  width: 200px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.grid-wrapper img {
+  width: 100%;
+
+} */
